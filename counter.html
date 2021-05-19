@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" name="viewport" content="width=device-width"/>
+            <title>Online Score Counter</title>
+            <link rel="stylesheet" href="counter.css"/>
+            <script src="counter.js"></script>
+        </head>
+        <body>
+            <header>
+                <h1>Online Score Counter</h1>
+                <div class="istru">
+                    <button type="button" class="collapsible">?</button>
+                        <div class="content" id="content">Vuoi contare qualcosa in modo semplice?<br/>
+                            Questo online counter ti permetterà di aggiungere o togliere punti allo score semplicemente con un tasto.<br/>
+                            Hai la possibilità di resettare il conteggio nel caso tu abbia sbagliato qualcosa.<br/>
+                            Attento non si potrà tornare indietro!
+                            <button class="chiusura" id="chiusura"><strong>X</strong></button>
+                        </div>
+                </div>
+            </header>
+            <section>
+                <div class="corpo" id="tot">0</div>
+            </section>
+            <section>
+                <div class="bottoni">
+                    <button id="plus">+</button>
+                    <button id="minus">-</button>
+                    <button id="reset">reset</button>
+                </div>
+            </section>
+            <section>
+                <div class="colori">
+                    <input type="button" id="blu" value="Blu"></input>
+                    <input type="button" id="giallo" value="Giallo"></input>
+                    <input type="button" id="grigio" value="Grigio"></input>
+                    <input type="button" id="verde" value="Verde"></input>
+                </div>
+                <div class="stili">
+                    <input class="font" type="button" id="fantasy" value="Fantasy"></input>
+                    <input class="font" type="button" id="serif" value="Serif"></input>
+                    <input class="font" type="button" id="franklin" value="Franklin"></input>
+                    <input class="font" type="button" id="courier" value="Courier"></input>
+                </div>
+            </section>
+            <footer>
+                <div class="piede">&copy;2021 Online Score Counter.</div>
+            </footer>
+        </body>
+    </html>
