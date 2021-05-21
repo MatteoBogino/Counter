@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" name="viewport" content="width=device-width"/>
+            <title>Online Score Counter</title>
+            <link rel="stylesheet" href="counter.css"/>
+        </head>
+        <body>
+            <header>
+                <h1>Online Score Counter</h1>
+                <div class="istru">
+                    <button type="button" class="collapsible">?</button>
+                        <div class="content" id="content">Vuoi contare qualcosa in modo semplice?<br/>
+                            Questo online counter ti permetterà di aggiungere o togliere punti allo score semplicemente con un tasto.<br/>
+                            Hai la possibilità di resettare il conteggio nel caso tu abbia sbagliato qualcosa.<br/>
+                            Attento non si potrà tornare indietro!
+                            <button class="chiusura" id="chiusura"><strong>X</strong></button>
+                        </div>
+                </div>
+            </header>
+            <section>
+                <div class="corpo" id="tot">0</div>
+            </section>
+            <section>
+                <div class="bottoni">
+                    <button id="plus">+</button>
+                    <button id="minus">-</button>
+                    <button id="reset">reset</button>
+                </div> 
+            </section>
+            <section>
+                <div class="colori">
+                    <input type="button" id="blu" value="Blu"></input>
+                    <input type="button" id="giallo" value="Giallo"></input>
+                    <input type="button" id="grigio" value="Grigio"></input>
+                    <input type="button" id="verde" value="Verde"></input>
+                </div>
+                <div class="stili">
+                    <input class="font" type="button" id="fantasy" value="Fantasy"></input>
+                    <input class="font" type="button" id="serif" value="Serif"></input>
+                    <input class="font" type="button" id="franklin" value="Franklin"></input>
+                    <input class="font" type="button" id="courier" value="Courier"></input>
+                </div>
+            </section>
+            <footer>
+                <div class="piede">&copy;2021 Online Score Counter.</div>
+            </footer>
+            <script src="counter.js"></script>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+            <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyA8Z0y_mdQjlLEGdsYsh-_I7KteViHTvJ0",
+                authDomain: "counter-mb-6fa4b.firebaseapp.com",
+                projectId: "counter-mb-6fa4b",
+                storageBucket: "counter-mb-6fa4b.appspot.com",
+                messagingSenderId: "171700705287",
+                appId: "1:171700705287:web:31a509f684c4f86362b2a2",
+                measurementId: "G-SS3JCM3QMF"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        </body>
+    </html>
