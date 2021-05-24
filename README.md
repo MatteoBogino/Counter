@@ -9,4 +9,4 @@ I linguaggi di programmazione utilizzati sono:
 - JavaScript  
 
 Di seguito il link per poter provare l'applicazione:  
-https://ecstatic-lumiere-7d3936.netlify.app/ - automatic!
+https://countermb.netlify.app/ - automatic!
